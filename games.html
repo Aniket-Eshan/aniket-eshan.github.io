@@ -57,7 +57,7 @@
 </head>
 <body>
   <h1>Supernova FX Games</h1>
-    <button>Fullscreen</button>
+    <button>Pizza Edition</button>
     <script>
       var urlObj = new window.URL(window.location.href);
           var url = "https://pizza-editions.github.io/";
@@ -92,7 +92,43 @@
           document.querySelector('button').innerHTML = "Fullscreen";
         };
       }
+      
+    <button>Minecraft</button>
+    <script>
+      var urlObj = new window.URL(window.location.href);
+          var url = "https://oly2rz.csb.app";
+      if (url) {
+        var win;
  
+        document.querySelector('button').onclick = function() {
+          if (win) {
+            win = window.open();
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.margin = '0';
+            iframe.src = url;
+            win.document.body.appendChild(iframe);
+          } else {
+            win = window.open();
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.margin = '0';
+            iframe.src = url;
+            win.document.body.appendChild(iframe);
+          }
+          document.querySelector('button').style.bacground = 'grey';
+          document.querySelector('button').innerHTML = "Fullscreen";
+        };
+      }
+
     </script>
   </script>
 </body>
